@@ -572,98 +572,6 @@ nav {
   text-align: right;
 }
 
-/* =========================================
-   SOUNDS / MIXES
-   ========================================= */
-.sounds-section {
-  padding: 5rem 0 0;
-}
-
-.sounds-section .container {
-  padding-bottom: 2rem;
-}
-
-.sounds-section .mix-grid {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.mix-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border);
-}
-
-.mix-card {
-  background: var(--bg2);
-  padding: 2.2rem;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.mix-card:hover {
-  background: var(--bg3);
-}
-
-.mix-card:hover .mix-play {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.mix-num {
-  font-family: var(--font-display);
-  font-size: 4rem;
-  color: rgba(245, 245, 245, 0.04);
-  line-height: 1;
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
-  user-select: none;
-}
-
-.mix-tag {
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 0.7rem;
-}
-
-.mix-title {
-  font-family: var(--font-display);
-  font-size: 1.8rem;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  margin-bottom: 0.4rem;
-}
-
-.mix-meta {
-  font-size: 0.68rem;
-  color: rgba(245, 245, 245, 0.3);
-  letter-spacing: 0.1em;
-}
-
-.mix-play {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid rgba(245, 245, 245, 0.2);
-  margin-top: 1.5rem;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.25s ease;
-  color: var(--w);
-}
-
-.mix-play svg {
-  width: 12px;
-  height: 12px;
-}
 
 /* =========================================
    BOOKING
@@ -1362,9 +1270,6 @@ footer {
     display: none;
   }
 
-  .mix-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   .booking-grid {
     grid-template-columns: 1fr;
@@ -1420,15 +1325,6 @@ footer {
 
   .about-photo-sub {
     display: none;
-  }
-
-  /* Sounds */
-  .sounds-section {
-    padding-top: 3.5rem;
-  }
-
-  .mix-grid {
-    grid-template-columns: 1fr;
   }
 
   /* Shows */
