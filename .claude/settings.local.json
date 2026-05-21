@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/c/Users/User/AppData/Local/Python/bin/python.exe -)",
+      "Bash(ls c:/MAT/mat_website/assets/*.mov)",
+      "Bash(ffmpeg -i \"c:/MAT/mat_website/assets/Mat9.mp4\" -vcodec libx264 -crf 28 -preset fast -vf \"scale=iw*0.85:ih*0.85\" -movflags +faststart \"c:/MAT/mat_website/assets/Mat9_compressed.mp4\" -y)"
+    ]
+  }
+}

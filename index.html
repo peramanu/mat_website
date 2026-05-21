@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MĀT — DJ · Producer · South Tyrol</title>
+
+  <!-- SEO -->
+  <meta name="description" content="MĀT — DJ und Producer aus Südtirol, Italien. Après-Ski, Club & Live-Events in den Alpen und international. Jetzt buchen.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Social Sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MĀT — DJ · Producer · South Tyrol">
+  <meta property="og:description" content="From the Dolomites to the world. Après-ski, clubs & live events — the sound of the mountains.">
+  <meta property="og:image" content="assets/image00005.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MĀT — DJ · Producer · South Tyrol">
+  <meta name="twitter:description" content="From the Dolomites to the world. Après-ski, clubs & live events — the sound of the mountains.">
+  <meta name="twitter:image" content="assets/image00005.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="assets/logo-white.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <img class="loader-logo" src="assets/logo-white.png" alt="MĀT">
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">
+      <img src="assets/logo-white.png" alt="MĀT">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#sounds">Sounds</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-ig" href="https://www.instagram.com/djmat.mp3" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="nav-book" href="#booking">Book Now</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#sounds">Sounds</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+    <div class="mobile-menu-bottom">
+      <a href="#booking" class="mobile-book">Book Now</a>
+      <a href="https://instagram.com/djmat.mp3" target="_blank" rel="noopener" class="mobile-ig" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        @djmat.mp3
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" id="hero-video">
+        <source src="assets/Mat12.mp4" type="video/mp4">
+        <img src="assets/image00005.jpeg" alt="MĀT Live">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <img class="hero-logo anim-up" src="assets/logo-white.png" alt="MĀT" style="--d:.1s">
+      <div class="hero-eyebrow anim-up" style="--d:.3s">
+        <span class="eyebrow-line"></span>
+        DJ · Producer · South Tyrol · Italy
+      </div>
+      <p class="hero-desc anim-up" style="--d:.5s">From the Dolomites to the world. Après-ski, clubs &amp; live events — the sound of the mountains.</p>
+      <div class="hero-btns anim-up" style="--d:.7s">
+        <a href="#shows" class="btn btn-white">Spring Shows 2026</a>
+        <a href="#booking" class="btn btn-line">Book Now</a>
+      </div>
+      <div class="hero-stats anim-up" style="--d:.9s">
+        <div class="hstat">
+          <div class="hstat-n" data-target="6.5" data-suffix="K">0K</div>
+          <div class="hstat-l">Followers</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n" data-target="58" data-suffix="+">0+</div>
+          <div class="hstat-l">Shows</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n" data-target="5" data-suffix="+">0+</div>
+          <div class="hstat-l">Countries</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint anim-up" style="--d:1.1s">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      PIZ SETEUR <b>·</b> BAITA SOFIE <b>·</b> KRONPLATZ <b>·</b> SNOWBAR SELVA <b>·</b> FIS WORLD CUP SASLONG <b>·</b> CLUB MAX <b>·</b> SALZBURG <b>·</b> WINTER FINALS <b>·</b> APRÈS-SKI <b>·</b> DOLOMITES <b>·</b>&nbsp;&nbsp;
+      PIZ SETEUR <b>·</b> BAITA SOFIE <b>·</b> KRONPLATZ <b>·</b> SNOWBAR SELVA <b>·</b> FIS WORLD CUP SASLONG <b>·</b> CLUB MAX <b>·</b> SALZBURG <b>·</b> WINTER FINALS <b>·</b> APRÈS-SKI <b>·</b> DOLOMITES <b>·</b>&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photos reveal">
+          <div class="about-photo-main">
+            <img src="assets/image00001.jpeg" alt="MĀT — DJ in the Alps" loading="lazy">
+          </div>
+          <div class="about-photo-sub">
+            <img src="assets/image00015.jpeg" alt="MĀT on stage" loading="lazy">
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="sec-label reveal">About</div>
+          <h2 class="sec-title reveal">Sound of<br>the Alps</h2>
+          <p class="reveal">MĀT is a DJ and producer from South Tyrol, Italy. His music fuses the raw energy of the Alps with modern club sound — authentic, energetic, unforgettable.</p>
+          <p class="reveal">Performances at the FIS Ski World Cup Saslong, Kronplatz, Seceda, Club Max and beyond have established him as a powerhouse in the après-ski and club scene.</p>
+          <div class="pill-row reveal">
+            <span class="pill">Après-Ski</span>
+            <span class="pill">Club</span>
+            <span class="pill">House</span>
+            <span class="pill">Live Events</span>
+            <span class="pill">Festivals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SHOWS -->
+  <section class="shows-section" id="shows">
+    <div class="container">
+      <div class="sec-label" id="shows-label">Shows</div>
+      <h2 class="sec-title">Live Dates</h2>
+    </div>
+    <div class="gigs-list" id="gigs-list">
+      <!-- Wird automatisch aus Google Sheets geladen -->
+      <div class="gigs-loading">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="sec-label reveal">Gallery</div>
+      <h2 class="sec-title reveal">In the Mix</h2>
+      <p class="gallery-hint reveal">Drag to explore</p>
+    </div>
+    <div class="gallery-track" id="gallery-track">
+      <div class="gallery-item"><img src="assets/image00001.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00002.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00003.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00004.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00005.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00006.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00007.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00008.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00009.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00010.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00011.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00012.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00013.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00014.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00015.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00016.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00017.jpeg" alt="MĀT Live" loading="lazy"></div>
+      <div class="gallery-item"><img src="assets/image00018.jpeg" alt="MĀT Live" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- VIDEO REEL -->
+  <section class="reel-section">
+    <div class="container">
+      <div class="sec-label reveal">Reel</div>
+      <h2 class="sec-title reveal">Feel the Energy</h2>
+    </div>
+    <div class="reel-grid">
+      <!-- Row group 1 -->
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/Mat1.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reel-tall reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/Mat7.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/IMG_0482.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/Mat8.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/IMG_1196.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <!-- Row group 2 -->
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/IMG_1202.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reel-tall reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/IMG_1875.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/Mat5.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/IMG_2559.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+      <div class="reel-item reveal">
+        <video muted loop playsinline preload="none" data-reel>
+          <source src="assets/Mat9.mp4" type="video/mp4">
+        </video>
+        <div class="reel-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SOUNDS -->
+  <section class="sounds-section" id="sounds">
+    <div class="container">
+      <div class="sec-label reveal">Sounds</div>
+      <h2 class="sec-title reveal">The Mixes</h2>
+    </div>
+    <div class="mix-grid">
+      <div class="mix-card reveal">
+        <div class="mix-num">01</div>
+        <div class="mix-tag">Après-Ski</div>
+        <div class="mix-title">Winter Sessions<br>Vol. 1</div>
+        <div class="mix-meta">Jan 2026 · 62 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+      <div class="mix-card reveal">
+        <div class="mix-num">02</div>
+        <div class="mix-tag">Club · House</div>
+        <div class="mix-title">Club Night<br>Mix</div>
+        <div class="mix-meta">Dez 2025 · 78 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+      <div class="mix-card reveal">
+        <div class="mix-num">03</div>
+        <div class="mix-tag">Mountain</div>
+        <div class="mix-title">Dolomites<br>Session</div>
+        <div class="mix-meta">Nov 2025 · 55 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+      <div class="mix-card reveal">
+        <div class="mix-num">04</div>
+        <div class="mix-tag">Live</div>
+        <div class="mix-title">Live @<br>Kronplatz</div>
+        <div class="mix-meta">Mär 2025 · 90 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+      <div class="mix-card reveal">
+        <div class="mix-num">05</div>
+        <div class="mix-tag">Festival</div>
+        <div class="mix-title">FIS World<br>Cup Set</div>
+        <div class="mix-meta">Feb 2025 · 45 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+      <div class="mix-card reveal">
+        <div class="mix-num">06</div>
+        <div class="mix-tag">House</div>
+        <div class="mix-title">Summer<br>Selections</div>
+        <div class="mix-meta">Jul 2025 · 68 MIN</div>
+        <a href="https://soundcloud.com/djmat" target="_blank" rel="noopener" class="mix-play" aria-label="Auf SoundCloud anhören">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking-section" id="booking">
+    <div class="booking-bg">
+      <img src="assets/image00005.jpeg" alt="MĀT Live" loading="lazy">
+      <div class="booking-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-left">
+          <div class="sec-label reveal">Booking</div>
+          <h2 class="booking-title reveal">Let's make<br>it happen.</h2>
+          <p class="booking-p reveal">For booking requests, collaborations and events — reach out directly. Available for après-ski, clubs, private events and festivals in Italy, Austria and internationally.</p>
+          <a class="booking-email reveal" href="mailto:bookingmatmusic@gmail.com">bookingmatmusic@gmail.com</a>
+          <div class="booking-btns reveal">
+            <a href="mailto:bookingmatmusic@gmail.com" class="btn btn-white">Send Email</a>
+            <a href="https://instagram.com/djmat.mp3" target="_blank" class="btn btn-line">Instagram DM</a>
+          </div>
+        </div>
+        <div class="booking-right reveal">
+          <div class="cinfo">
+            <div class="cinfo-row">
+              <span class="cinfo-label">Instagram</span>
+              <a href="https://instagram.com/djmat.mp3" target="_blank">@djmat.mp3</a>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-label">Email</span>
+              <a href="mailto:bookingmatmusic@gmail.com">bookingmatmusic@gmail.com</a>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-label">Based in</span>
+              <span>South Tyrol · Italy</span>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-label">Available</span>
+              <span>IT · AT · International</span>
+            </div>
+            <div class="cinfo-row">
+              <span class="cinfo-label">Genre</span>
+              <span>Après-Ski · Club · House</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <a href="#" class="footer-logo"><img src="assets/logo-white.png" alt="MĀT"></a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#shows">Shows</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#sounds">Sounds</a>
+        <a href="#booking">Booking</a>
+        <a href="#booking" class="footer-book">Book Now &rarr;</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://instagram.com/djmat.mp3" target="_blank" rel="noopener" class="footer-ig-link" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          @djmat.mp3
+        </a>
+        <a href="mailto:bookingmatmusic@gmail.com" class="footer-email-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          bookingmatmusic@gmail.com
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 MĀT · South Tyrol, Italy</span>
+      <div class="footer-legal-links">
+        <a href="impressum.html" class="footer-legal-link">Impressum</a>
+        <a href="datenschutz.html" class="footer-legal-link">Datenschutz</a>
+      </div>
+      <span class="footer-credit">site by <a href="https://instagram.com/manuelperathoner_" target="_blank" rel="noopener">@manuelperathoner_</a></span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
