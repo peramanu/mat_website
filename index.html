@@ -327,39 +327,146 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-main">
+    <!-- CTA Band -->
+    <div class="footer-cta">
+      <div class="sec-label">Booking</div>
+      <a href="mailto:bookingmatmusic@gmail.com" class="footer-cta-email">
+        <span>bookingmatmusic</span>
+        <span>@gmail.com</span>
+      </a>
+      <div class="footer-cta-actions">
+        <a href="mailto:bookingmatmusic@gmail.com" class="btn btn-white">Book Now</a>
+        <a href="https://instagram.com/djmat.mp3" target="_blank" rel="noopener" class="btn btn-line">Instagram DM</a>
+        <span class="footer-avail">IT · AT · International</span>
+      </div>
+    </div>
+
+    <!-- Nav strip -->
+    <div class="footer-strip">
       <a href="#" class="footer-logo"><img src="assets/logo-white.png" alt="MĀT"></a>
       <nav class="footer-nav" aria-label="Footer navigation">
-        <span class="footer-nav-label">Navigation</span>
         <a href="#about">About</a>
         <a href="#shows">Shows</a>
         <a href="#gallery">Gallery</a>
         <a href="#booking">Booking</a>
-        <a href="#booking" class="footer-book">Book Now &rarr;</a>
       </nav>
       <div class="footer-social">
-        <span class="footer-nav-label">Contact</span>
         <a href="https://instagram.com/djmat.mp3" target="_blank" rel="noopener" class="footer-ig-link" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
           @djmat.mp3
         </a>
         <a href="mailto:bookingmatmusic@gmail.com" class="footer-email-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
           bookingmatmusic@gmail.com
         </a>
       </div>
     </div>
+
+    <!-- Legal bar -->
     <div class="footer-bottom">
       <span class="footer-copy">© 2026 MĀT · South Tyrol, Italy</span>
       <div class="footer-legal-links">
         <a href="impressum.html" class="footer-legal-link">Impressum</a>
         <a href="datenschutz.html" class="footer-legal-link">Datenschutz</a>
+        <button class="footer-legal-link footer-cookie-btn" id="footer-open-cookies">Cookie-Einstellungen</button>
       </div>
       <span class="footer-credit">site by <a href="https://instagram.com/manuelperathoner_" target="_blank" rel="noopener">@manuelperathoner_</a></span>
     </div>
   </footer>
 
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="true" aria-label="Cookie-Einstellungen">
+
+    <!-- Compact bar (default view) -->
+    <div class="cookie-bar" id="cookie-bar">
+      <div class="cookie-bar-text">
+        <span class="cookie-bar-label">Cookie-Einstellungen · Cookie Settings</span>
+        <p>Wir verwenden technisch notwendige Cookies sowie optionale Analyse-Cookies. <a href="datenschutz.html">Datenschutzerklärung</a></p>
+      </div>
+      <div class="cookie-bar-actions">
+        <button class="cookie-btn-text" id="cookie-open-settings">Einstellungen</button>
+        <button class="cookie-btn-secondary" id="cookie-essential">Nur notwendige</button>
+        <button class="cookie-btn-primary" id="cookie-accept-all">Alle akzeptieren</button>
+      </div>
+    </div>
+
+    <!-- Settings panel -->
+    <div class="cookie-settings" id="cookie-settings" hidden>
+      <div class="cookie-settings-head">
+        <button class="cookie-btn-back" id="cookie-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Zurück
+        </button>
+        <span class="cookie-settings-title">Cookie-Präferenzen</span>
+      </div>
+
+      <!-- Notwendige -->
+      <div class="cookie-cat">
+        <div class="cookie-cat-row">
+          <div class="cookie-cat-info">
+            <div class="cookie-cat-name">Notwendige Cookies</div>
+            <div class="cookie-cat-desc">Technisch erforderlich für den Betrieb der Website. Können nicht deaktiviert werden.</div>
+          </div>
+          <span class="cookie-always-on">Immer aktiv</span>
+        </div>
+        <div class="cookie-cat-table">
+          <div class="cookie-row">
+            <span class="cookie-name">__cf_bm</span>
+            <span class="cookie-purpose">Cloudflare Bot-Management &amp; Sicherheit</span>
+            <span class="cookie-duration">Session</span>
+          </div>
+          <div class="cookie-row">
+            <span class="cookie-name">cf_clearance</span>
+            <span class="cookie-purpose">Cloudflare Sicherheits-Token (Challenge)</span>
+            <span class="cookie-duration">30 Tage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistik -->
+      <div class="cookie-cat">
+        <div class="cookie-cat-row">
+          <div class="cookie-cat-info">
+            <div class="cookie-cat-name">Statistik</div>
+            <div class="cookie-cat-desc">Anonyme Besucherstatistiken via Cloudflare Web Analytics. Keine personenbezogenen Profile, keine Weitergabe an Dritte.</div>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="toggle-analytics" role="switch" aria-label="Statistik-Cookies aktivieren">
+            <span class="cookie-toggle-track"><span class="cookie-toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="cookie-cat-table">
+          <div class="cookie-row">
+            <span class="cookie-name">_cfuvid</span>
+            <span class="cookie-purpose">Cloudflare Web Analytics — anonyme Seitenaufrufe</span>
+            <span class="cookie-duration">Session</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marketing -->
+      <div class="cookie-cat">
+        <div class="cookie-cat-row">
+          <div class="cookie-cat-info">
+            <div class="cookie-cat-name">Marketing</div>
+            <div class="cookie-cat-desc">Derzeit nicht eingesetzt. Zustimmung für eine mögliche zukünftige Nutzung (z. B. Meta Pixel, Retargeting).</div>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="toggle-marketing" role="switch" aria-label="Marketing-Cookies aktivieren">
+            <span class="cookie-toggle-track"><span class="cookie-toggle-thumb"></span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="cookie-settings-actions">
+        <button class="cookie-btn-primary" id="cookie-save-settings">Auswahl speichern</button>
+        <button class="cookie-btn-text" id="cookie-accept-all-2">Alle akzeptieren</button>
+      </div>
+    </div>
+  </div>
+
   <script src="main.js"></script>
   <script src="animations.js"></script>
+  <script src="cookie.js"></script>
 </body>
 </html>
